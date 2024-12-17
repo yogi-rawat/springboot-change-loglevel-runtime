@@ -20,7 +20,7 @@ public class App {
     public String ping() {
         log.info("Request on ping endpoint");
         log.debug("DEBUG: Request on ping endpoint22");
-        return "pong";
+        return "ping pong";
     }
 
     @RequestMapping(value = "/loglevel/{loglevel}", method = RequestMethod.POST)
