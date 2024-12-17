@@ -36,6 +36,11 @@ public class App {
         return "ok"
     }
 
+    @RequestMapping(value = "/health/ping", method = RequestMethod.POST)
+    public String loglevel() {
+        return "success"
+    }
+
     public String setLogLevel(String logLevel, String packageName) {
         String retVal;
         LoggerContext loggerContext = (LoggerContext)LoggerFactory.getILoggerFactory();
